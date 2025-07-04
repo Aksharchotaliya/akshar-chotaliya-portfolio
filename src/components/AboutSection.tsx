@@ -10,7 +10,21 @@ export const AboutSection = () => {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          {/* Profile Photo */}
+          <div className="order-2 lg:order-1">
+            <div className="relative max-w-md mx-auto">
+              <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-[var(--shadow-strong)] border border-[hsl(var(--bg-accent))]">
+                <img 
+                  src="/lovable-uploads/06d2b54b-d6d1-4e5c-adca-74ba1316e02b.png" 
+                  alt="Akshar Chotaliya"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--primary))]/10 to-transparent rounded-2xl" />
+            </div>
+          </div>
+          
+          <div className="space-y-6 order-1 lg:order-2">
             <div className="card-elegant p-8">
               <p className="text-lg leading-relaxed text-[hsl(var(--text-primary))] mb-6">
                 My journey began in the corridors of computer engineering, where late nights debugging code 
