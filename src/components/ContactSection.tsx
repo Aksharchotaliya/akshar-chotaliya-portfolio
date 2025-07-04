@@ -1,4 +1,4 @@
-import { Mail, Phone, Github, Linkedin, Instagram, Youtube } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Instagram } from "lucide-react";
 
 export const ContactSection = () => {
   return (
@@ -62,10 +62,9 @@ export const ContactSection = () => {
               <h4 className="text-xl font-bold text-[hsl(var(--text-primary))] mb-4">Follow My Journey</h4>
               <div className="flex space-x-4">
                 {[
-                  { icon: Instagram, href: "https://www.instagram.com/akshar_chotaliya/", label: "Instagram" },
-                  { icon: Linkedin, href: "https://www.linkedin.com/in/akshar-chotaliya-182401230/", label: "LinkedIn" },
-                  { icon: Github, href: "https://github.com/Aksharchotaliya", label: "GitHub" },
-                  { icon: Youtube, href: "https://www.youtube.com/@aksharchotaliya", label: "YouTube" }
+                  { icon: Instagram, href: "https://instagram.com/akshar_chotaliya", label: "Instagram" },
+                  { icon: Linkedin, href: "https://linkedin.com/in/akshar-chotaliya", label: "LinkedIn" },
+                  { icon: Github, href: "https://github.com/Aksharchotaliya", label: "GitHub" }
                 ].map((social) => (
                   <a
                     key={social.label}
